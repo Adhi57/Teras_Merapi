@@ -38,15 +38,14 @@
               <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav_list">
-              <a href="about-us.html" class="nav-link active-link">About Us</a>
+              <a href="about-us.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav_list">
+              <a href="#package" class="nav-link active-link">Package</a>
               <div class="circle"></div>
             </li>
             <li class="nav_list">
-              <a href="package.html" class="nav-link">Package</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="gallery.html" class="nav-link">Gallery</a>
+              <a href="#gallery" class="nav-link">Gallery</a>
               <div class="circle"></div>
             </li>
           </ul>
@@ -72,59 +71,57 @@
               rgba(0, 0, 0, 0.8) 14%,
               rgba(0, 0, 0, 0) 79%
             ),
-            url(assets/images/bg-photo2.webp);
+            url(assets/images/bg-photo3.webp);
           background-size: cover;
-          background-position: center;
         "
       >
         <div class="main-text">
-          <h1>ABOUT US</h1>
+          <h1>PAKET RESERVASI</h1>
           <h4>
-            Selamat datang di Teras Merapi, tempat di mana keindahan alam
-            berpadu dengan harmoni kehidupan.
+            Temukan pilihan paket terbaik untuk menikmati keindahan Teras
+            Merapi, dirancang khusus untuk pengalaman yang tak terlupakan.
           </h4>
         </div>
       </section>
 
       <!-- -------------- MAIN ---------------- -->
       <main class="wrapper">
-        <section class="section" id="About-Us">
+        <section class="section" id="Package">
+          <div class="paket-premium-box">
             <div class="top-header">
-                <h1>LOKASI KAMI</h1>
+              <h1>PAKET PREMIUM</h1>
             </div>
-            <div class="about-image-box">
-                <div class="image-grid">
-                  <div class="main-img">
-                    <img id="mainImage" src="assets/images/image2.png" alt="Teras" />
-                  </div>
-                  <div class="child-img">
-                    <img src="assets/images/gambar1.png" alt="Teras" class="child-image" />
-                    <img src="assets/images/image3.png" alt="Teras" class="child-image" />
-                    <img src="assets/images/image2.png" alt="Teras" class="child-image" />
-                    <img src="assets/images/camping-teras-merapi.jpeg" alt="Teras" class="child-image" />
-                  </div>
-                </div>              
-            <div class="about-maps">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8832486738597!2d110.45330177357675!3d-7.587684974968087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a67890295f307%3A0x57397a1c14d58629!2sTeras%20Merapi!5e0!3m2!1sid!2sid!4v1733652769459!5m2!1sid!2sid"
-                width="400"
-                height="480"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div class="paket-premium-container">
+              <div class="paket-premium-image">
+                <img src="assets/images/sample-image.png" alt="" />
+              </div>
+              <div class="paket-premium-deskripsi">
+                <h1 class="harga">Rp. 000,000,000</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque accusantium non alias aperiam molestias esse,
+                  quidem voluptatum officiis earum aliquid placeat nemo, porro
+                  hic minus consequuntur, enim voluptatibus eligendi deserunt?
+                </p>
+                <button
+                  class="btn"
+                  style="width: 340px; height: 45px; margin-top: 40px"
+                >
+                  <i
+                    class="fa-solid fa-cart-shopping"
+                    style="margin-right: 8px"
+                  ></i
+                  >Masukkan ke keranjang
+                </button>
+              </div>
             </div>
           </div>
-        </section>
 
-        <section class="section" id="about">
+          <div class="paket-lain-box" style="margin-top: 100px;">
             <div class="top-header">
-                <h1>ABOUT US</h1>
+                <h1>PILIHAN PAKET MENARIK LAINNYA</h1>
             </div>
-
-            <!-- Deskripsi About Us lebih lanjut Disini -->
-
+          </div>
         </section>
       </main>
     </div>
@@ -192,21 +189,5 @@
       src="https://kit.fontawesome.com/0063d6d309.js"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      // Get the main image element
-      const mainImage = document.getElementById("mainImage");
-
-      // Get all child images
-      const childImages = document.querySelectorAll(".child-image");
-
-      // Add event listeners to all child images
-      childImages.forEach((child) => {
-        child.addEventListener("click", () => {
-          // Update the main image source with the clicked child image's source
-          mainImage.src = child.src;
-        });
-      });
-    </script>
   </body>
 </html>
