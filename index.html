@@ -65,8 +65,19 @@
         </div>
       </nav>
 
-      <section class="main-background" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 14%, rgba(0, 0, 0, 0) 79%), url(assets/images/camping-teras-merapi.jpeg); background-position: center;">
-        <div class="main-text">
+      <section
+        class="main-background"
+        style="
+          background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.8) 14%,
+              rgba(0, 0, 0, 0) 79%
+            ),
+            url(assets/images/camping-teras-merapi.jpeg);
+          background-position: center;
+        "
+      >
+        <div class="main-text reveal">
           <h1>TERAS MERAPI</h1>
           <h4>
             Menikmati Keindahan Alam dan Kehangatan Budaya di Teras Merapi.
@@ -76,7 +87,7 @@
 
       <!-- -------------- MAIN ---------------- -->
       <main class="wrapper">
-        <section class="feature-box">
+        <section class="feature-box reveal">
           <div class="feature-box-images">
             <img src="assets/images/image2.png" alt="" />
           </div>
@@ -95,7 +106,22 @@
             <button class="btn" style="width: 200px">VIEW MORE</button>
           </div>
         </section>
-        <section class="feature-box">
+      </main>
+      <div class="did-you-know-box reveal">
+        <div class="did-you-know-title">
+          <h1>Did You Know?</h1>
+        </div>
+        <div class="did-you-know-desc">
+          Teras Merapi, yang terletak di lereng Gunung Merapi, menawarkan
+          pemandangan panoramik yang menakjubkan, udara pegunungan yang sejuk,
+          dan suasana yang menenangkan. Tempat ini menjadi favorit para pecinta
+          alam untuk bersantai, menikmati kuliner lokal, dan mengabadikan
+          keindahan salah satu gunung berapi paling aktif di dunia!
+        </div>
+      </div>
+
+      <main class="wrapper">
+        <section class="feature-box reveal">
           <div class="feature-text">
             <div class="feature-text-title">
               <h1>PACKAGE</h1>
@@ -117,10 +143,10 @@
         <!-- FACILITIES BOX -->
 
         <section class="section" id="facilities">
-          <div class="top-header">
+          <div class="top-header reveal">
             <h1>OUR FACILITIES</h1>
           </div>
-          <div class="facilities-container">
+          <div class="facilities-container reveal">
             <div class="facilities-box">
               <i class="fa-solid fa-mosque"></i>
               <label>Mushola</label>
@@ -163,11 +189,25 @@
           </div>
         </section>
 
+        <!-- JELAJAHI SOCIAL MEDIA -->
+        <section class="section" id="social-media">
+          <div class="top-header reveal">
+            <h1>JELAJAHI SOSIAL MEDIA KAMI!</h1>
+          </div>
+          <div class="socmed-box reveal">
+            <div class="socmed-container">
+              <div class="instagram-box"> <i class="fa-brands fa-instagram"></i></div>
+              <div class="tiktok-box" ><i class="fa-brands fa-tiktok"></i></div>
+              <div class="whatsapp-box" ><i class="fa-brands fa-whatsapp"></i></div>
+            </div>
+          </div>
+        </section>
+
         <section class="section" id="facilities">
-          <div class="top-header">
+          <div class="top-header reveal">
             <h1>GALLERY</h1>
           </div>
-          <div class="home-gallery-container">
+          <div class="home-gallery-container reveal">
             <div class="image-box">
               <img src="assets/images/photo1.png" alt="" />
             </div>
@@ -188,13 +228,13 @@
             </div>
           </div>
 
-          <div class="gallery-button">
+          <div class="gallery-button reveal">
             <button class="btn" style="width: 200px">VIEW MORE</button>
           </div>
         </section>
 
         <section class="section" id="Maps">
-          <div class="feature-maps">
+          <div class="feature-maps reveal">
             <div class="maps">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8832486738597!2d110.45330177357675!3d-7.587684974968087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a67890295f307%3A0x57397a1c14d58629!2sTeras%20Merapi!5e0!3m2!1sid!2sid!4v1733652769459!5m2!1sid!2sid"
@@ -223,9 +263,15 @@
 
               <div class="contacts-text">
                 <i class="uil uil-clock-eight"></i>
-                <p>Weekend : <br> 07:30 am – 18:00 pm</p>
+                <p>
+                  Weekend : <br />
+                  07:30 am – 18:00 pm
+                </p>
                 <i class="uil uil-clock-eight"></i>
-                <p>Weekday : <br> 08:00 am – 18:00 pm</p>
+                <p>
+                  Weekday : <br />
+                  08:00 am – 18:00 pm
+                </p>
               </div>
             </div>
           </div>
@@ -267,7 +313,7 @@
             </div>
             <div class="get-in-touch-logo-box">
               <div class="get-in-touch-logo-container">
-                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-tiktok"></i>
                 <i class="fa-solid fa-location-dot"></i>
@@ -286,7 +332,8 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
@@ -296,5 +343,19 @@
       src="https://kit.fontawesome.com/0063d6d309.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Initialize ScrollReveal with default settings
+      ScrollReveal().reveal('.reveal', {
+        distance: '50px',  // Distance of the reveal from the original position
+        duration: 1000,    // Animation duration in ms
+        delay: 200,        // Delay before the animation starts
+        easing: 'ease-in-out', // Easing function for the animation
+        opacity: 0,        // Initial opacity before animation starts
+        reset: true,       // Whether to reset the animation when it goes out of view
+        origin: 'bottom',  // Where the element should appear from (can be top, right, bottom, left)
+      });
+    </script>
+
   </body>
 </html>
