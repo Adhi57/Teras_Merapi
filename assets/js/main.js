@@ -106,4 +106,24 @@ function scrollActive() {
   });
 }
 
+// Open fullscreen viewer
+function openFullscreen(imgElement) {
+  // Get the image source of the clicked image
+  const imageSrc = imgElement.src;
+
+  // Set the fullscreen image source
+  const fullscreenImage = document.getElementById('fullscreenImage');
+  fullscreenImage.src = imageSrc;
+
+  // Show the fullscreen viewer
+  document.getElementById('fullscreenViewer').style.display = 'flex';
+}
+
+// Close fullscreen viewer
+function closeFullscreen() {
+  // Hide the fullscreen viewer
+  document.getElementById('fullscreenViewer').style.display = 'none';
+}
+
+
 window.addEventListener("scroll", scrollActive);

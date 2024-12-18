@@ -209,24 +209,30 @@
           </div>
           <div class="home-gallery-container reveal">
             <div class="image-box">
-              <img src="assets/images/photo1.png" alt="" />
+              <img src="assets/images/photo1.png " alt="" onclick="openFullscreen(this)" />
             </div>
             <div class="image-box">
-              <img src="assets/images/photo1.png" alt="" />
+              <img src="assets/images/camping-teras-merapi.jpeg" alt="" onclick="openFullscreen(this)"/>
             </div>
             <div class="image-box">
-              <img src="assets/images/photo1.png" alt="" />
+              <img src="assets/images/photo1.png" alt="" onclick="openFullscreen(this)"/>
             </div>
             <div class="image-box">
-              <img src="assets/images/photo1.png" alt="" />
+              <img src="assets/images/photo1.png" alt="" onclick="openFullscreen(this)"/>
             </div>
             <div class="image-box">
-              <img src="assets/images/photo1.png" alt="" />
+              <img src="assets/images/photo1.png" alt="" onclick="openFullscreen(this)"/>
             </div>
             <div class="image-box">
-              <img src="assets/images/photo1.png" alt="" />
+              <img src="assets/images/photo1.png" alt="" onclick="openFullscreen(this)"/>
             </div>
           </div>
+
+          <!-- Fullscreen Image Viewer -->
+            <div id="fullscreenViewer" class="fullscreen-viewer">
+              <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+              <img id="fullscreenImage" src="" alt="Fullscreen Image">
+            </div>
 
           <div class="gallery-button reveal">
             <button class="btn" style="width: 200px">VIEW MORE</button>
@@ -350,7 +356,7 @@
         distance: '50px',  // Distance of the reveal from the original position
         duration: 1000,    // Animation duration in ms
         delay: 200,        // Delay before the animation starts
-        easing: 'ease-in-out', // Easing function for the animation
+        easing: 'ease-in', // Easing function for the animation
         opacity: 0,        // Initial opacity before animation starts
         reset: true,       // Whether to reset the animation when it goes out of view
         origin: 'bottom',  // Where the element should appear from (can be top, right, bottom, left)
